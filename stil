@@ -1,0 +1,216 @@
+
+*{
+	margin: 0;
+	padding:0;	
+}
+
+body,html{
+	height:100%;
+}
+
+ 
+.menu { 
+	position:fixed; /* absolute du menüler sabitlensin diye fixed yaptık.*/
+	height: 85px;
+	width: 100%;
+	text-align: center;
+	line-height: 85px;
+	background-color: rgba(39,13,24,0.8);
+
+}
+.menu a {
+	color: white;
+	font-family: Arial;
+	font-size: 1.2 em;
+	text-decoration:none; /* altı çizgiyi yok eder*/
+	margin-left: 7px; /* arada boşluk bırakır*/
+	padding:10px 10px ; /*kareleri büyütür.*/
+	border-radius:10px;/*köselerini yuvarlaklaştırır.*/
+	transition:2s; /* üzerine gelince efekt oluşur.*/
+}
+nav a:hover{ /* mouse üzerine geldiğinde*/
+	background-color:white;
+	color:#420014;
+}
+
+
+.sayfa {
+	min-height:600px;
+	background-color:#6b000e;
+}
+.bant {
+	height: 600px;
+	background-color: #ffffaa;	
+}
+
+#s6{background-color: #333333; }
+
+#s1{
+	background:url("resimler/stbg.png") center center,url("resimler/arkaplan1.jpg") center center no-repeat; /* resimleri üstüste koyduk*/
+	background-attachment : fixed;/* sayfanın zeminde çakılı kalmasını sağlar. */
+	background-size:cover;/* resmi sayfanın tam ortasına koyar ortaya odaklar.*/
+}
+#s1 img { /* logomuzu ekledik */
+	height: 13%;
+	width: 9%;
+	position:absolute;
+	margin-left:80px; /* soldan boşluk bıraktık*/
+	margin-top:1px; /* üstten boşluk bıraktık*/
+	position:fixed; /* logoyuda menüye sabitler*/
+	}
+
+/* kutucuklar */
+
+#s2 .boxB{
+ width: 100%;
+ margin: 0 auto 0 auto;
+}
+#s2 .boxB ul{
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+#s2 .boxB ul li{
+ position: relative;
+ list-style: none;
+ width: 30%;
+ margin: 0 5% 0 0;
+ float: left;
+ background-position: left bottom;
+ background-position: cover;
+ min-height: 370px;
+}
+#s2 .boxB ul li:last-child{
+ margin: 0 0 0 0;
+}
+#s2 .boxB ul li .yazı1{
+ position: absolute;
+ bottom: 25px;
+ width: 90%;
+ height: 90%;
+ left: 25px;
+ background-image: url(resimler/karinca.jpg);
+ background-attachment: fixed;
+ background-size: cover;
+}
+#s2 .boxB ul li .yazı1 p{
+ text-transform: uppercase;
+ font-size: 15px;
+ font-family: arial;
+}
+#s2 .boxB ul li .yazı1 h2{
+ text-transform: uppercase;
+ font-size: 35px;
+ font-family: calibri;
+}
+#s2 .boxB ul li .yazı2{
+ position: absolute;
+ bottom: 25px;
+ width: 90%;
+ height: 90%;
+ left: 25px;
+ background-image: url(resimler/karinca.jpg);
+ background-attachment: fixed;
+ background-size: cover;
+}
+#s2 .boxB ul li .yazı2 p{
+ text-transform: uppercase;
+ font-size: 15px;
+ font-family: arial;
+}
+#s2 .boxB ul li .yazı2 h2{
+ text-transform: uppercase;
+ font-size: 35px;
+ font-family: calibri;
+}
+#s2 .boxB ul li .yazı3{
+ position: absolute;
+ bottom: 25px;
+ width: 90%;
+ height: 90%;
+ left: 25px;
+ background-image: url(resimler/karinca.jpg);
+ background-attachment: fixed;
+ background-size: cover;
+}
+#s2 .boxB ul li .yazı3 p{
+ text-transform: uppercase;
+ font-size: 15px;
+ font-family: arial;
+}
+#s2 .boxB ul li .yazı3 h2{
+ text-transform: uppercase;
+ font-size: 35px;
+ font-family: calibri;
+}
+
+#s3{
+	background:url("resimler/stbg.png") center center,url("resimler/arkaplan2.jpg") center center no-repeat;
+	background-attachment : fixed ;
+	background-size: cover ;
+	color: black;
+}
+
+#s5{
+	background:url("resimler/stbg.png") center center,url("resimler/arkaplan3.jpg") center center no-repeat;
+	background-attachment : fixed ;
+	background-size:cover ;
+}
+
+
+.icerik {
+	height:600px;
+	width:100%;
+	color:white;
+	padding-right=50px;
+	padding-left=50px;
+	padding-bottom=50px;
+	padding-top=50px;	
+}
+
+
+.icerik > h1 {
+	padding:100px;
+	color:#ffffff;
+	font-size:2em;
+	font-family:Calibri
+
+} 
+.icerik > p {
+	color:#ffffff;
+	font-size:1.2em;
+	font-family:Calibri;
+
+}
+
+.banticerik{
+	height:600px;
+	width:100%;
+	color:black;
+	word-wrap:break-word;
+	padding-right=50px;
+	padding-left=50px;
+	padding-bottom=50px;
+	padding-top=50px;
+}
+
+.banticerik > h1 {
+	padding:100px;
+	color:black;
+	font-size:2em;
+	font-family:Calibri;
+
+} 
+.banticerik > p {
+	color:black;
+	font-size:1.2em;
+	font-family:Calibri;
+
+}
+
+
+
+
+
+
+
