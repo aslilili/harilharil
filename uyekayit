@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Başlıksız Belge</title>
+</head>
+
+<body>
+
+<?php 
+$baglanti = mysql_connect("sifredeg_harilharil","sifredeg_usrasli","")or die("Bağlantı Kurulamadı");
+$veritabani = mysql_select_db("harilharil")or die('Veritabanı Bulunamadı');
+
+
+ $ad =$_POST["ad"];
+ $soyad =$_POST["soyad"];
+ $eposta=$_POST["eposta"];
+ $parola =$_POST["parola"];
+ $tel =$_POST["tel"];
+ $il =$_POST["il"];
+ $cinsiyet =$_POST["cinsiyet"];
+ if($ad == "" or $soyad == "")
+{
+ print("lutfen isim ve soyisim alanını boş bırakmayınız");
+}
+ elseif($eposta == "")
+{
+ print("lutfen eposta alanını boş bırakmayınız");
+}
+ elseif($parola == "")
+{
+ print("lutfen parola alanını boş bırakmayınız");
+}
+ elseif($tel == "")
+  print("lutfen telefon alanını boş bırakmayınız");
+}
+ elseif($il == "")
+  print("lutfen il alanını boş bırakmayınız");
+}
+ elseif($cinsiyet == "")
+}
+ print("lutfen cinsiyet alanını boş bırakmayınız");
+}
+
+else
+{
+ $ekle=mysql_query("INSERT INTO (`ad`, `soyad`, `eposta`,'parola','tel','il','cinsiyet') VALUES ('$ad', '$soyad', '$eposta','$parola','$tel,'$il','cinsiyet')");
+ print("<b>kaydınız başarı ile gerçekleşmiştir</b><br>");
+ print("ad soyad:$ad ,$soyad<br>");
+ print("eposta:$eposta<br>");
+ print("parola:$parola<br>");
+ print("tel:$tel<br>");
+ print("il:$il<br>");
+ print("cinsiyet:$cinsiyet<br>");
+}
+ 
+?>
+
+
+
+</body>
+</html>
