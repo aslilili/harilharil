@@ -111,11 +111,12 @@
 		<div id="s6" class="bant"> 
 		<div class="icerik">  <h1>İLETİŞİM</h1>
 			<br> <h2 align="left"> EMAİL
-			<br> aslikaratas.1344@hotmail.com
+			<br> 
 			<br> TELEFON
-			<br> 05382881311
+			<br> 
 			<br> HARİTA
-			<br>AYDIN </h2> 
+			<br>
+	</h2> 
 				
 			
 		</div>		
