@@ -1,0 +1,33 @@
+<?php 
+	session_start();
+	
+
+	include("veritabani.php");
+	vt_baglan();
+	
+	
+	$eposta = $_POST["eposta"];
+	$parola = $_POST["parola"];
+	
+	$sql = "SELECT * FROM kullanici where eposta='$eposta' and parola='$parola' ";
+
+	$kayitlar 		= mysql_query($sql);
+	$kayit_sayisi 	= mysql_num_rows($kayitlar);
+	
+	if ( $kayit_sayisi > 0 ){ 
+	
+		// KULLANICININ güvenli bir biçimde login olduğunu session a yazıyoruz 
+		$_SESSION["eposta"]  = "GIRIS_OK";
+		$_SESSION["ad"] 		= $_POST["eposta"];
+
+		echo "<a href='index.php'> Ana sayfaya gitmek için tıklayın</a>";
+	}else {
+		$_SESSION["eposta"] = "HATA";
+		echo " Giriş hatalı";
+		echo "<a href='uyegiris_form.php'> Bilgilerinizi kontrol ediniz ve tekrar denemek için tıklayın</a>";
+	}
+	
+
+?>
+</body>
+</html>
